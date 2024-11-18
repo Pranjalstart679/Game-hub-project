@@ -2,30 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Advanced Sudoku Game</title>
-    <link rel="stylesheet" href="style .css">
-    <script src="script.js"></script>
+    <title>Colorful Sudoku Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="game-container">
-        <div id="timer">Time: 00:00</div>
-        <div id="difficulty-selector">
-            <label>Difficulty: 
-                <select id="difficulty">
-                    <option value="easy">Easy</option>
-                    <option value="medium" selected>Medium</option>
-                    <option value="hard">Hard</option>
-                </select>
-            </label>
-        </div>
+        <div id="timer">00:00</div>
         <div id="sudoku-board"></div>
+        <div id="number-pad"></div>
         <div id="game-controls">
             <button onclick="newGame()">New Game</button>
             <button onclick="resetGame()">Reset</button>
-            <button onclick="checkSolution()">Check Solution</button>
-            <button onclick="getHint()">Hint</button>
+            <button onclick="checkSolution()">Check</button>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
