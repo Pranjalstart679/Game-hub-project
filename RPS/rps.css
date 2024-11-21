@@ -1,0 +1,86 @@
+body {
+    
+    background-image: url("./3.jpg");
+    background-size: cover;
+    
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    /* text-align: center; */
+    transition: background 0.5s ease-in;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .game {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .player, .computer, .result {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .choice {
+    background-color: #007bff;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  #restart {
+    background-color: #007bff;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  #restart:hover {
+    background-color: #0056b3;
+  }
+  
+  .choice:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+#imageContainer {
+    padding-bottom: 20px;
+    max-width: 50%;
+    display: none;
+}
+#resultImage{
+    padding-bottom: 20px;
+    max-width: 50%;
+    
+}
+img {
+    max-width: 100%;
+}
+.winlose{
+  text-align: center;
+  text-size-adjust: 10px;
+}
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  /* margin-bottom: 20px; */
+  font-family: 'Pacifico', cursive;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.homelogo{
+  max-width: 20%;
+  font-size: 10px;
+}

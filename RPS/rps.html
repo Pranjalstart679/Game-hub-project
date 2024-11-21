@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rps.css">
+  <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div class="homelogo"><a href="../games/game.html" class="home"><img src="home.png"></a> </div>
+    <h1 class="heading">GamesHub</h1>
+   
+  <h1>Rock Paper Scissors Game</h1>
+  <div class="game">
+    <div class="player">
+      <h2>Player</h2>
+
+      <div id="imageContainer">
+        <img id="image" src="" alt="Displayed Image">
+    </div>
+
+
+      <button class="choice" onclick="determineWinner" data-src="r.png" data-choice="rock">Rock</button>
+      <button class="choice" onclick="determineWinner" data-src="p.png" data-choice="paper">Paper</button>
+      <button class="choice" onclick="determineWinner" data-src="s.png" data-choice="scissors">Scissors</button>
+    </div>
+    <div class="result">
+      <h2>Result</h2>
+      <p id="resultMessage">Choose your move!</p>
+      <div class="restart">
+        <button id="restart" onclick="reset()">Restart</button>
+    </div>
+    </div>
+    
+    <div class="computer">
+      <h2>Computer</h2>
+      <p id="computerChoice">Computer chose: ?</p>
+      <p><img id="resultImage" src="" ></p>
+    </div>
+
+  </div>
+  <div class="winlose">
+    <p id="win">Wins:</p>
+    <p id="loss">Loss:</p>
+  </div>
+  
+  <script src="rps.js"></script>
+</body>
+</html>

@@ -1,21 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="game .css">
-  <title>GamesHub - Game Selection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    
-  <div class="container">
-    <h1 class="heading">GamesHub</h1>
-    <div class="game-links">
-        <a class="game-link" href="../Blackjack/black.html"><img src="../games/blacklogo.png" class="logo"></a>
-        <a class="game-link" href="../rps/rps.html"><img src="../games/rpslogo.png" class="logo"></a>
-      <!-- Add more game links here -->
-    </div>
-  </div>
+    <header>
+        <h1>🎮 Game Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#sudoku">Sudoku</a></li>
+                <li><a href="#snake">Snake</a></li>
+                <li><a href="#wordle">Wordle</a></li>
+                <li><a href="#rock-paper-scissors">Rock Paper Scissors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games">
+            <div class="game-container">
+                <div class="game-card" id="sudoku">
+                    <h2>Sudoku</h2>
+                    <div class="game-illustration">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                            <!-- Sudoku Grid -->
+                            <rect x="10" y="10" width="280" height="280" fill="white" stroke="black" stroke-width="2"/>
+                            
+                            <!-- Grid Lines -->
+                            <g stroke="gray" stroke-width="1">
+                                <line x1="10" y1="50" x2="290" y2="50" />
+                                <line x1="10" y1="90" x2="290" y2="90" />
+                                <line x1="10" y1="130" x2="290" y2="130" />
+                                <line x1="10" y1="170" x2="290" y2="170" />
+                                <line x1="10" y1="210" x2="290" y2="210" />
+                                <line x1="10" y1="250" x2="290" y2="250" />
+                                
+                                <line x1="50" y1="10" y2="290" x1="50" x2="50" />
+                                <line x1="90" y1="10" y2="290" x1="90" x2="90" />
+                                <line x1="130" y1="10" y2="290" x1="130" x2="130" />
+                                <line x1="170" y1="10" y2="290" x1="170" x2="170" />
+                                <line x1="210" y1="10" y2="290" x1="210" x2="210" />
+                                <line x1="250" y1="10" y2="290" x1="250" x2="250" />
+                            </g>
+                            
+                            <!-- Some Pre-filled Numbers -->
+                            <text x="25" y="40" font-size="20" fill="blue">5</text>
+                            <text x="105" y="80" font-size="20" fill="blue">3</text>
+                            <text x="185" y="120" font-size="20" fill="blue">7</text>
+                            <text x="65" y="200" font-size="20" fill="blue">8</text>
+                            <text x="245" y="240" font-size="20" fill="blue">9</text>
+                        </svg>
+                    </div>
+                    <a href="sudoku.html" class="play-button">Play Sudoku</a>
+                </div>
+
+                <div class="game-card" id="snake">
+                    <h2>Snake</h2>
+                    <div class="game-illustration">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                            <!-- Grid -->
+                            <rect x="10" y="10" width="280" height="280" fill="#f0f0f0" stroke="black" stroke-width="2"/>
+                            
+                            <!-- Snake Body -->
+                            <rect x="100" y="150" width="20" height="20" fill="green"/>
+                            <rect x="120" y="150" width="20" height="20" fill="green"/>
+                            <rect x="140" y="150" width="20" height="20" fill="green"/>
+                            
+                            <!-- Snake Head -->
+                            <rect x="160" y="150" width="20" height="20" fill="darkgreen"/>
+                            
+                            <!-- Food -->
+                            <rect x="220" y="100" width="20" height="20" fill="red"/>
+                            
+                            <!-- Movement Arrows -->
+                            <polygon points="50,200 70,180 70,220" fill="blue"/>
+                            <polygon points="250,200 230,180 230,220" fill="blue"/>
+                        </svg>
+                    </div>
+                    <a href="snake.html" class="play-button">Play Snake</a>
+                </div>
+
+                <div class="game-card" id="wordle">
+                    <h2>Wordle</h2>
+                    <div class="game-illustration">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                            <!-- Letter Tiles -->
+                            <rect x="50" y="50" width="50" height="50" fill="#787C7E"/>
+                            <text x="70" y="85" font-size="20" fill="white">S</text>
+                            
+                            <rect x="110" y="50" width="50" height="50" fill="#C9B458"/>
+                            <text x="130" y="85" font-size="20" fill="white">T</text>
+                            
+                            <rect x="170" y="50" width="50" height="50" fill="#6AAA64"/>
+                            <text x="190" y="85" font-size="20" fill="white">A</text>
+                            
+                            <rect x="230" y="50" width="50" height="50" fill="#C9B458"/>
+                            <text x="250" y="85" font-size="20" fill="white">R</text>
+                            
+                            <rect x="290" y="50" width="50" height="50" fill="#6AAA64"/>
+                            <text x="310" y="85" font-size="20" fill="white">T</text>
+                            
+                            <!-- Color Legend -->
+                            <rect x="50" y="150" width="20" height="20" fill="#787C7E"/>
+                            <text x="75" y="165" font-size="12">Gray: Not in word</text>
+                            
+                            <rect x="50" y="180" width="20" height="20" fill="#C9B458"/>
+                            <text x="75" y="195" font-size="12">Yellow: Right letter, wrong spot</text>
+                            
+                            <rect x="50" y="210" width="20" height="20" fill="#6AAA64"/>
+                            <text x="75" y="225" font-size="12">Green: Right letter, right spot</text>
+                        </svg>
+                    </div>
+                    <a href="wordle.html" class="play-button">Play Wordle</a>
+                </div>
+
+                <div class="game-card" id="rock-paper-scissors">
+                    <h2>Rock Paper Scissors</h2>
+                    <div class="game-illustration">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                            <!-- Rock Hand -->
+                            <path d="M50,200 Q100,150 150,200 Q200,250 250,200" 
+                                  fill="#8B4513" stroke="black" stroke-width="2"/>
+                            
+                            <!-- Paper Hand -->
+                            <path d="M50,150 L50,100 L100,50 L150,100 L150,200 Z" 
+                                  fill="#F5DEB3" stroke="black" stroke-width="2"/>
+                            
+                            <!-- Scissors -->
+                            <g transform="translate(200, 150)">
+                                <path d="M-50,0 L-25,-25 L0,0 L25,-25 L50,0 
+                                         L25,25 L0,0 L-25,25 Z" 
+                                      fill="#C0C0C0" stroke="black" stroke-width="2"/>
+                            </g>
+                            
+                            <!-- Arrows and Labels -->
+                            <text x="100" y="250" font-size="16">Rock</text>
+                            <text x="50" y="100" font-size="16">Paper</text>
+                            <text x="230" y="250" font-size="16">Scissors</text>
+                        </svg>
+                    </div>
+                    <a href="rps.html" class="play-button">Play Rock Paper Scissors</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Game Hub</p>
+    </footer>
+
+    <script src="game.js"></script>
 </body>
 </html>
-
