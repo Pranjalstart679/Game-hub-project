@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3498db;
+    --primary-color: #000000fe;
     --secondary-color: #2ecc71;
     --background-color: #f0f4f8;
     --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -231,4 +231,31 @@ footer {
 
 .game-card:hover {
     animation: subtle-float 2s ease-in-out infinite;
+}
+
+.logo img {
+    height: 90px; /* Adjust based on your logo size */
+    width: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align logo and navigation */
+    padding: 10px;
+    background-color: #f4f4f4; /* Example background */
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
