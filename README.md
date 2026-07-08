@@ -1,4 +1,3 @@
-
 Hello there! I'm thrilled to help you create a README for your GitHub repository about your game hub website project. A well-structured README can really help others understand your project and how to use it. Here’s a template you can use:
 
 ```markdown
