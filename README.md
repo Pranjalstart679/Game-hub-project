@@ -13,7 +13,7 @@ Welcome to the Game Hub project! 🎮 This website serves as a centralized platf
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-awdadw
+
 ## Features
 
 - **Game Listings**: Browse through a collection of popular games.
