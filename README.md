@@ -5,7 +5,7 @@ Hello there! I'm thrilled to help you create a README for your GitHub repository
 
 Welcome to the Game Hub project! 🎮 This website serves as a centralized platform for all your gaming needs, providing information, reviews, and community forums for various games.
 
-## Table of Contents
+## Table of Content
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
