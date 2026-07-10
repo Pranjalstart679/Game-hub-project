@@ -66,7 +66,7 @@ Thank you for checking out the Game Hub! We hope you enjoy exploring the world o
 ```
 
 ### Explanation:
-- This README provides a clear overview of your project, covering key aspects such as features, technologies used, installation steps, usage instructions, and contribution guidelines.
+- This README provides a clear overview of your project, covering key aspects such as res, technologies used, installation steps, usage instructions, and contribution guidelines.
 - It includes a friendly tone and emojis to make it more engaging.
 - Users can easily navigate through the sections with a table of contents.
 
